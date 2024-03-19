@@ -1,0 +1,374 @@
+    #dynamic-checkout-cart {
+    min-height: 50px;
+    }
+    }
+    @media screen and (max-width: 750px) {
+    #dynamic-checkout-cart {
+    min-height: 240px;
+    }
+    }
+    :root {
+    --max-site-width: 1820px;
+    }
+    @font-face {
+    font-family: Helvetica;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("//shrempin.com/cdn/fonts/helvetica/helvetica_n4.fe093fe9ca22a15354813c912484945a36b79146.woff2?h1=c2hyZW1waW4uY29t&h2=c2hyZW1waW4uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=c8d13f429d7ad016a5bbde896c5e11501bb4137747f9a8591ac0e40e74251c36") format("woff2"),
+    url("//shrempin.com/cdn/fonts/helvetica/helvetica_n4.8bddb85c18a0094c427a9bf65dee963ad88de4e8.woff?h1=c2hyZW1waW4uY29t&h2=c2hyZW1waW4uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=04c2b9d3015206dcf0e7ae1859c609d7023b9c7419cd7224bf10b737761e1443") format("woff");
+    }
+    @font-face {
+    font-family: Helvetica;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("//shrempin.com/cdn/fonts/helvetica/helvetica_n4.fe093fe9ca22a15354813c912484945a36b79146.woff2?h1=c2hyZW1waW4uY29t&h2=c2hyZW1waW4uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=c8d13f429d7ad016a5bbde896c5e11501bb4137747f9a8591ac0e40e74251c36") format("woff2"),
+    url("//shrempin.com/cdn/fonts/helvetica/helvetica_n4.8bddb85c18a0094c427a9bf65dee963ad88de4e8.woff?h1=c2hyZW1waW4uY29t&h2=c2hyZW1waW4uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=04c2b9d3015206dcf0e7ae1859c609d7023b9c7419cd7224bf10b737761e1443") format("woff");
+    }
+    @font-face {
+    font-family: Helvetica;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("//shrempin.com/cdn/fonts/helvetica/helvetica_n7.39bee04bd277a9c4e94e2fd42d53f4e3c0afb8a5.woff2?h1=c2hyZW1waW4uY29t&h2=c2hyZW1waW4uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=22d9ffb3588177682546aadd5ed394a660d11ebeb121edf60b6f9286d38ef7bc") format("woff2"),
+    url("//shrempin.com/cdn/fonts/helvetica/helvetica_n7.b95359461a6788d5549e702cb2123bc40c227e49.woff?h1=c2hyZW1waW4uY29t&h2=c2hyZW1waW4uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=5aae532a5c945b2837572e54eb84fac06e4a797fa9922e809f8bb9bbd685d961") format("woff");
+    }
+    @font-face {
+    font-family: Helvetica;
+    font-weight: 400;
+    font-style: oblique;
+    font-display: swap;
+    src: url("//shrempin.com/cdn/fonts/helvetica/helvetica_o4.f9832a0fc1ee8fc5a359636e410d6941e1e4ca03.woff2?h1=c2hyZW1waW4uY29t&h2=c2hyZW1waW4uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=35371c658704e38896f88bc21d51eeab7d67042e0b00b198daa9f2c70fe69e82") format("woff2"),
+    url("//shrempin.com/cdn/fonts/helvetica/helvetica_o4.0063286aec443697ebae04eeb9c78b820f9f7805.woff?h1=c2hyZW1waW4uY29t&h2=c2hyZW1waW4uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=1a21dc9c73c08c6124f3fb80b4b8a59c43a7832b681fbbb59d8b2d71230fbfaf") format("woff");
+    }
+    @font-face {
+    font-family: Helvetica;
+    font-weight: 700;
+    font-style: oblique;
+    font-display: swap;
+    src: url("//shrempin.com/cdn/fonts/helvetica/helvetica_o7.215fd4ca1a06214fa01e44328a1992c977700ea2.woff2?h1=c2hyZW1waW4uY29t&h2=c2hyZW1waW4uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=488e34a1ce775475373298604adc92a503e93a3e0b4ec2f716b975de3d48b811") format("woff2"),
+    url("//shrempin.com/cdn/fonts/helvetica/helvetica_o7.b0a2026ae2aa64d060f9ce0ee1b3c3c1aa21bf88.woff?h1=c2hyZW1waW4uY29t&h2=c2hyZW1waW4uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=6986641a14ea36e867278f14b466766f34d70ed83aaccdf242999b29ced8c9eb") format("woff");
+    }
+    @font-face {
+    font-family: Helvetica;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("//shrempin.com/cdn/fonts/helvetica/helvetica_n7.39bee04bd277a9c4e94e2fd42d53f4e3c0afb8a5.woff2?h1=c2hyZW1waW4uY29t&h2=c2hyZW1waW4uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=22d9ffb3588177682546aadd5ed394a660d11ebeb121edf60b6f9286d38ef7bc") format("woff2"),
+    url("//shrempin.com/cdn/fonts/helvetica/helvetica_n7.b95359461a6788d5549e702cb2123bc40c227e49.woff?h1=c2hyZW1waW4uY29t&h2=c2hyZW1waW4uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=5aae532a5c945b2837572e54eb84fac06e4a797fa9922e809f8bb9bbd685d961") format("woff");
+    }
+    :root {
+    --heading-font-stack: Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+    --heading-font-weight: 400;
+    --heading-font-style: normal;
+    --heading-letterspacing: 0.0;
+    --heading-capitalize: none;
+    --main-font-stack: Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+    --main-font-weight: 400;
+    --main-font-style: normal;
+    --accent-font-stack: , ;
+    --accent-font-weight: ;
+    --accent-font-style: ;
+    }
+    :root {
+    --payment-button-height: 48px;
+    --section-x-padding: 1.25rem;
+    --grid-gap: 1.25rem;
+    --icon-thickness: 1.5;
+    --header-height: 60px;
+    --transparent: transparent;
+    --color-primary-text: 0, 0, 0;
+    --color-primary-background: 255, 255, 255;
+    --color-primary-accent-1: 255, 148, 0;
+    --color-primary-accent-2: 255, 137, 0;
+    --color-primary-card: 255, 255, 255;
+    --color-primary-gradient: linear-gradient(249deg, rgba(255, 103, 0, 1), rgba(255, 255, 255, 1) 54%, rgba(255, 126, 0, 1) 74%);--color-primary-text-overlay: 255, 255, 255;
+    --color-primary-card-text-overlay: 255, 255, 255;
+    --color-primary-accent-1-overlay: 0, 0, 0;
+    --color-primary-accent-2-overlay: 0, 0, 0;
+    --color-secondary-text: 0, 0, 0;
+    --color-secondary-background: 255, 255, 255;
+    --color-secondary-accent-1: 235, 49, 49;
+    --color-secondary-accent-2: 255, 255, 255;
+    --color-secondary-card: 255, 255, 255;
+    --color-secondary-gradient: linear-gradient(61deg, rgba(163, 108, 33, 1) 13%, rgba(170, 248, 219, 1) 86%);--color-secondary-text-overlay: 255, 255, 255;
+    --color-secondary-card-text-overlay: 255, 255, 255;
+    --color-secondary-accent-1-overlay: 0, 0, 0;
+    --color-secondary-accent-2-overlay: 0, 0, 0;
+    --color-tertiary-text: 0, 0, 0;
+    --color-tertiary-background: 255, 113, 0;
+    --color-tertiary-accent-1: 235, 49, 49;
+    --color-tertiary-accent-2: 255, 132, 13;
+    --color-tertiary-card: 255, 255, 255;
+    --color-tertiary-gradient: radial-gradient(rgba(255, 127, 2, 1) 4%, rgba(255, 255, 255, 1) 85%);--color-tertiary-text-overlay: 255, 113, 0;
+    --color-tertiary-card-text-overlay: 255, 255, 255;
+    --color-tertiary-accent-1-overlay: 0, 0, 0;
+    --color-tertiary-accent-2-overlay: 0, 0, 0;
+    --color-quaternary-text: 0, 0, 0;
+    --color-quaternary-background: 255, 255, 255;
+    --color-quaternary-accent-1: 235, 49, 49;
+    --color-quaternary-accent-2: 255, 255, 255;
+    --color-quaternary-card: 255, 255, 255;
+    --color-quaternary-gradient: linear-gradient(127deg, rgba(255, 137, 0, 1) 2%, rgba(249, 247, 248, 1) 56%, rgba(255, 165, 13, 1) 100%);--color-quaternary-text-overlay: 255, 255, 255;
+    --color-quaternary-card-text-overlay: 255, 255, 255;
+    --color-quaternary-accent-1-overlay: 0, 0, 0;
+    --color-quaternary-accent-2-overlay: 0, 0, 0;
+    --color-border: 0, 0, 0;
+    --section-border-thickness: 0px;
+    --drop-down-offset: 2px;
+    --shape-divider-offset: 2px;
+    --button-border-radius: 0.5rem;
+    --textarea-border-radius: 0.5rem;
+    --button-border-width: 2px;
+    --input-border-width: 2px;
+    --button-shadow-border-width: var(--button-border-width);
+    --button-text-transform: none;
+    --button-drop-shadow-size:  6px;
+    --button-drop-shadow-top-size: 6px;
+    --button-drop-shadow-left-size: 0px;
+    --button-hover-top-size: 6px;
+    --button-hover-left-size: var(--button-drop-shadow-left-size);
+    --button-shadow-display: block;
+    --sticker-border-radius: 0.375rem;  
+    --sticker-border-width: 2px;
+    --sticker-shadow-border-width: 0;
+    --sticker-text-transform: uppercase; 
+    --sticker-drop-shadow-top-size: 1px;
+    --sticker-drop-shadow-left-size: 1px;
+    --card-border-radius: 0.375rem;
+    --card-drop-shadow-size: 12px;
+    --card-drop-shadow-top-size: 12px;
+    --card-drop-shadow-left-size: 0;
+    --card-border-width: 2px;
+    --card-shadow-border-width: var(--card-border-width);
+    --media-border-radius: 0.375rem;
+    --media-drop-shadow-size: 11px;
+    --media-drop-shadow-top-size: 11px;
+    --media-drop-shadow-left-size: 11px;
+    --media-drop-shadow-size-half: 5.5px;
+    --media-drop-shadow-top-size-half: 5.5px;
+    --media-drop-shadow-left-size-half: 5.5px;
+    --media-border-width: 2px;
+    --media-shadow-border-width: var(--media-border-width);
+    --heading-shadow-spread: 6px;
+    --heading-stroke-thickness: 2px;
+    --product-tiles-text-transform: none;
+    --select-svg: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 12L23.2826 36.0527C23.3724 36.1542 23.4826 36.2354 23.6062 36.291C23.7297 36.3467 23.8636 36.3755 23.999 36.3755C24.1345 36.3755 24.2684 36.3467 24.3919 36.291C24.5154 36.2354 24.6257 36.1542 24.7155 36.0527L46 12' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E%0A");
+    --hover-effect-enlarge-shape: 1;
+    --hover-effect-lift-shape: 0;
+    --hover-effect-rotate-shape: 0deg;
+    }
+    [data-color-scheme="primary"] {
+    --color-scheme-text: var(--color-primary-text);
+    --color-scheme-background: var(--color-primary-background);
+    --color-scheme-accent-1: var(--color-primary-accent-1);
+    --color-scheme-accent-2: var(--color-primary-accent-2);
+    --color-scheme-card: var(--color-primary-card);
+    --color-scheme-gradient: var(--color-primary-gradient);
+    --color-scheme-text-overlay: var(--color-primary-text-overlay);
+    --color-scheme-card-text-overlay: var(--color-primary-card-text-overlay);
+    --color-scheme-accent-1-overlay: var(--color-primary-accent-1-overlay);
+    --color-scheme-accent-2-overlay: var(--color-primary-accent-2-overlay);
+    --color-scheme-secondary-background: var(--color-primary-background);
+    --select-svg: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 12L23.2826 36.0527C23.3724 36.1542 23.4826 36.2354 23.6062 36.291C23.7297 36.3467 23.8636 36.3755 23.999 36.3755C24.1345 36.3755 24.2684 36.3467 24.3919 36.291C24.5154 36.2354 24.6257 36.1542 24.7155 36.0527L46 12' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E%0A");
+    }
+    [data-color-scheme="secondary"] {
+    --color-scheme-text: var(--color-secondary-text);
+    --color-scheme-background: var(--color-secondary-background);
+    --color-scheme-gradient: var(--color-secondary-gradient);
+    --color-scheme-accent-1: var(--color-secondary-accent-1);
+    --color-scheme-accent-2: var(--color-secondary-accent-2);
+    --color-scheme-card: var(--color-secondary-card);
+    --color-scheme-text-overlay: var(--color-secondary-text-overlay);
+    --color-scheme-card-text-overlay: var(--color-secondary-card-text-overlay);
+    --color-scheme-accent-1-overlay: var(--color-secondary-accent-1-overlay);
+    --color-scheme-accent-2-overlay: var(--color-secondary-accent-2-overlay);
+    --color-scheme-secondary-background: var(--color-secondary-background);
+    --select-svg: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 12L23.2826 36.0527C23.3724 36.1542 23.4826 36.2354 23.6062 36.291C23.7297 36.3467 23.8636 36.3755 23.999 36.3755C24.1345 36.3755 24.2684 36.3467 24.3919 36.291C24.5154 36.2354 24.6257 36.1542 24.7155 36.0527L46 12' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E%0A");
+    }
+    [data-color-scheme="tertiary"] {
+    --color-scheme-text: var(--color-tertiary-text);
+    --color-scheme-background: var(--color-tertiary-background);
+    --color-scheme-accent-1: var(--color-tertiary-accent-1);
+    --color-scheme-accent-2: var(--color-tertiary-accent-2);
+    --color-scheme-card: var(--color-tertiary-card);
+    --color-scheme-gradient: var(--color-tertiary-gradient);
+    --color-scheme-text-overlay: var(--color-tertiary-text-overlay);
+    --color-scheme-card-text-overlay: var(--color-tertiary-card-text-overlay);
+    --color-scheme-accent-1-overlay: var(--color-tertiary-accent-1-overlay);
+    --color-scheme-accent-2-overlay: var(--color-tertiary-accent-2-overlay);
+    --color-scheme-secondary-background: var(--color-tertiary-background);
+    --select-svg: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 12L23.2826 36.0527C23.3724 36.1542 23.4826 36.2354 23.6062 36.291C23.7297 36.3467 23.8636 36.3755 23.999 36.3755C24.1345 36.3755 24.2684 36.3467 24.3919 36.291C24.5154 36.2354 24.6257 36.1542 24.7155 36.0527L46 12' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E%0A");
+    }
+    [data-color-scheme="quaternary"] {
+    --color-scheme-text: var(--color-quaternary-text);
+    --color-scheme-background: var(--color-quaternary-background);
+    --color-scheme-accent-1: var(--color-quaternary-accent-1);
+    --color-scheme-accent-2: var(--color-quaternary-accent-2);
+    --color-scheme-card: var(--color-quaternary-card);
+    --color-scheme-gradient: var(--color-quaternary-gradient);
+    --color-scheme-text-overlay: var(--color-quaternary-text-overlay);
+    --color-scheme-card-text-overlay: var(--color-quaternary-card-text-overlay);
+    --color-scheme-accent-1-overlay: var(--color-quaternary-accent-1-overlay);
+    --color-scheme-accent-2-overlay: var(--color-quaternary-accent-2-overlay);
+    --color-scheme-secondary-background: var(--color-quaternary-background);
+    --select-svg: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 12L23.2826 36.0527C23.3724 36.1542 23.4826 36.2354 23.6062 36.291C23.7297 36.3467 23.8636 36.3755 23.999 36.3755C24.1345 36.3755 24.2684 36.3467 24.3919 36.291C24.5154 36.2354 24.6257 36.1542 24.7155 36.0527L46 12' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E%0A");
+    }
+    [data-color-scheme="white"] {
+    --color-scheme-text: 255,255,255;
+    --color-scheme-accent: 255,255,255;
+    --color-scheme-background: 0,0,0;
+    --color-scheme-card: 0,0,0;
+    --color-scheme-text-overlay: 0,0,0;
+    --color-scheme-accent-1-overlay: 0,0,0;
+    --color-border: 255,255,255;
+    }
+    [data-color-scheme="black"] {
+    --color-scheme-text: 0,0,0;
+    --color-scheme-accent: 0,0,0;
+    --color-scheme-background: 255,255,255;
+    --color-scheme-card: 255,255,255;
+    --color-scheme-text-overlay: 255,255,255;
+    --color-scheme-accent-1-overlay: 255,255,255;
+    --color-border: 0,0,0;
+    }
+    [data-color-scheme="primary"] .card {
+    --color-scheme-secondary-background: var(--color-primary-card);
+    }
+    [data-color-scheme="secondary"] .card {
+    --color-scheme-secondary-background: var(--color-secondary-card);
+    }
+    [data-color-scheme="tertiary"] .card {
+    --color-scheme-secondary-background: var(--color-tertiary-card);
+    }
+    [data-color-scheme="quaternary"] .card {
+    --color-scheme-secondary-background: var(--color-quaternary-card);
+    }
+    [data-color-scheme] {
+    --color-heading-shadow: var(--color-scheme-accent);
+    --color-heading-stroke: var(--color-scheme-text);
+    --color-button-background: var(--color-scheme-accent-2);
+    --color-button-text: var(--color-scheme-text);
+    --color-button-border: var(--color-scheme-text);
+    --color-button-shadow: var(--color-scheme-gradient);
+    --color-card-border: var(--color-scheme-text);
+    --color-card-shadow: var(--color-scheme-gradient);
+    --color-sticker-border: var(--color-scheme-text);
+    --color-sticker-shadow: var(--color-scheme-text);
+    --color-media-border: var(--color-scheme-text);
+    --color-media-shadow: var(--color-scheme-gradient);
+    --color-media-shadow-fill: rgb(var(--color-scheme-gradient));
+    --color-sticker-shadow: var(--color-scheme-text);
+    --color-sticker-shadow-fill: rgb(var(--color-scheme-text));--heading-color: var(--color-scheme-accent);
+    --heading-text-shadow:0.01em 0.01em 0 rgb(var(--color-heading-shadow)),0.02em 0.02em 0 rgb(var(--color-heading-shadow)),0.03em 0.03em 0 rgb(var(--color-heading-shadow)),0.04em 0.04em 0 rgb(var(--color-heading-shadow)),0.05em 0.05em 0 rgb(var(--color-heading-shadow)),0.06em 0.06em 0 rgb(var(--color-heading-shadow)),0.07em 0.07em 0 rgb(var(--color-heading-shadow)),0.08em 0.08em 0 rgb(var(--color-heading-shadow)),0.09em 0.09em 0 rgb(var(--color-heading-shadow)),0.1em 0.1em 0 rgb(var(--color-heading-shadow)),0.11em 0.11em 0 rgb(var(--color-heading-shadow)),0.12em 0.12em 0 rgb(var(--color-heading-shadow)),0.13em 0.13em 0 rgb(var(--color-heading-shadow));}
+    [data-color-scheme] .card {
+    --color-scheme-text-overlay: var(--color-scheme-card-text-overlay);
+    }
+    /*
+    Typography and spacing sizes
+    */:root {
+    --base-font-size: 93.75%;
+    --base-line-height: 1.2;
+    --line-height-heading: 1.1;
+    --font-size-ratio-xs: 0.7491535;
+    --font-size-ratio-sm: 0.8908985;
+    --font-size-ratio-base: 1;
+    --font-size-ratio-lg: 1.33484;
+    --font-size-ratio-xl: 1.498307;
+    --font-size-ratio-2xl: 1.681793;
+    --font-size-ratio-3xl: 2;
+    --font-size-ratio-4xl: 2.66968;
+    --font-size-ratio-5xl: 2.996614;
+    --font-size-ratio-6xl: 3.563594;
+    --font-size-ratio-7xl: 4;
+    --font-size-ratio-8xl: 4.519842;
+    --font-size-ratio-9xl: 4.996614;
+    --font-size-xs: calc(var(--font-size-ratio-xs) * 1rem);
+    --font-size-sm: calc(var(--font-size-ratio-sm) * 1rem);
+    --font-size-base: calc(var(--font-size-ratio-base) * 1rem);
+    --font-size-lg: calc(var(--font-size-ratio-lg) * 1rem);
+    --font-size-xl: calc(var(--font-size-ratio-xl) * 1rem);
+    --font-size-2xl: calc(var(--font-size-ratio-2xl) * 1rem);
+    --font-size-3xl: calc(var(--font-size-ratio-3xl) * 1rem);
+    --font-size-4xl: calc(var(--font-size-ratio-4xl) * 1rem);
+    --font-size-5xl: calc(var(--font-size-ratio-5xl) * 1rem);
+    --font-size-6xl: calc(var(--font-size-ratio-6xl) * 1rem);
+    --font-size-7xl: calc(var(--font-size-ratio-7xl) * 1rem);
+    --font-size-8xl: calc(var(--font-size-ratio-8xl) * 1rem);
+    --font-size-9xl: calc(var(--font-size-ratio-9xl) * 1rem);
+    --standard-heading-size: var(--font-size-base);
+    --feature-heading-size: var(--font-size-base);
+    --secondary-heading-size: var(--font-size-base);
+    --section-vertical-spacing: 2rem;
+    }
+    @media (min-width: 990px) {
+    :root {
+    --standard-heading-size: var(--font-size-base);
+    --feature-heading-size: var(--font-size-base);
+    --secondary-heading-size: var(--font-size-base);
+    --section-vertical-spacing: 4rem;
+    --section-x-padding: 2.5rem;
+    --grid-gap: 2.5rem;
+    }
+    }
+    .heading-effects {
+    color: rgb(var(--heading-color));
+    text-shadow: var(--heading-text-shadow);
+    -webkit-text-stroke: var(--heading-stroke-thickness) rgb(var(--color-heading-stroke));
+    text-stroke: var(--heading-stroke-thickness) rgb(var(--color-heading-stroke));
+    }
+    .heading-standard {
+    font-size: var(--standard-heading-size);
+    }
+    .heading-feature {
+    font-size: var(--feature-heading-size);
+    }
+    .heading-secondary {
+    font-size: var(--secondary-heading-size);
+    }
+    /*
+    Cards
+    */
+    .card-container::after {}
+    /*
+    Media
+    */
+    .media-style-container::after,
+    .media-shape-drop-shadow {}
+    /*
+    Custom cursor
+    */body {
+    cursor: url('//shrempin.com/cdn/shop/files/shremp_cursor_a6baf092-4529-4eea-bc2f-57eb634595ff.png?v=1705905810&width=32') 0 0, auto;
+    cursor: -webkit-image-set(
+    url('//shrempin.com/cdn/shop/files/shremp_cursor_a6baf092-4529-4eea-bc2f-57eb634595ff.png?v=1705905810&width=32') 1x,
+    url('//shrempin.com/cdn/shop/files/shremp_cursor_a6baf092-4529-4eea-bc2f-57eb634595ff.png?v=1705905810&width=64') 2x) 0 0, auto;
+    cursor: image-set(
+    url('//shrempin.com/cdn/shop/files/shremp_cursor_a6baf092-4529-4eea-bc2f-57eb634595ff.png?v=1705905810&width=32') 1x,
+    url('//shrempin.com/cdn/shop/files/shremp_cursor_a6baf092-4529-4eea-bc2f-57eb634595ff.png?v=1705905810&width=64') 2x) 0 0, auto;
+    }button, [role="button"], a {
+    cursor: url('//shrempin.com/cdn/shop/files/shremp_cursor_a6baf092-4529-4eea-bc2f-57eb634595ff.png?v=1705905810&width=32') 0 0, pointer;
+    cursor: -webkit-image-set(
+    url('//shrempin.com/cdn/shop/files/shremp_cursor_a6baf092-4529-4eea-bc2f-57eb634595ff.png?v=1705905810&width=32') 1x,
+    url('//shrempin.com/cdn/shop/files/shremp_cursor_a6baf092-4529-4eea-bc2f-57eb634595ff.png?v=1705905810&width=64') 2x) 0 0, pointer;
+    cursor: image-set(
+    url('//shrempin.com/cdn/shop/files/shremp_cursor_a6baf092-4529-4eea-bc2f-57eb634595ff.png?v=1705905810&width=32') 1x,
+    url('//shrempin.com/cdn/shop/files/shremp_cursor_a6baf092-4529-4eea-bc2f-57eb634595ff.png?v=1705905810&width=64') 2x) 0 0, pointer;
+    }
+    [x-cloak] {
+    display: none;
+    }
+    [data-parallax-container] {
+    will-change: opacity;
+    opacity: 0;
+    transition: opacity 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    .no-js [data-parallax-container],
+    [data-parallax-container].animated {
+    opacity: 1;
+    }
+    @media (prefers-reduced-motion) {
+    [data-parallax-container] {
+    opacity: 1;
+    }
+    }
